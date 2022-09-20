@@ -21,6 +21,3 @@ $new_dante = str_replace($_user,'***',$Dante_speak,$sostituzioni);
 <p>La stinga è lunga <?php echo $string_length; ?></p>
 <h2><?= $new_dante ?></h2>
 <p>la parola è stata sostituita<?=$sostituzioni ?>volte</p>
-<pre>
-    <?php var_dump($word); ?>
-</pre>
