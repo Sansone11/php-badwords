@@ -11,8 +11,16 @@ $Dante_speak = 'Per me si va ne la città dolente,
                 Queste parole di colore oscuro
                 vid’io scritte al sommo d’una porta;
                 per ch’io: «Maestro, il senso lor m’è duro';
-$string_length = strlen( $Dante_speak )
-$_GET['word']
+$string_length = strlen( $Dante_speak );
+$word = explode('', $Dante_speak);
+$user = $_GET['word'];
+$new_dante = str_replace($_user,'***',$Dante_speak,$sostituzioni);
+
 ?>
-<h1><?php echo $Dante_speak ?></h1>
-<p>La stinga è lunga <?php echo $string_length ?></p>
+<h1><?php echo $Dante_speak; ?></h1>
+<p>La stinga è lunga <?php echo $string_length; ?></p>
+<h2><?= $new_dante ?></h2>
+<p>la parola è stata sostituita<?=$sostituzioni ?>volte</p>
+<pre>
+    <?php var_dump($word); ?>
+</pre>
