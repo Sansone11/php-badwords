@@ -12,6 +12,7 @@ $Dante_speak = 'Per me si va ne la città dolente,
                 vid’io scritte al sommo d’una porta;
                 per ch’io: «Maestro, il senso lor m’è duro';
 $string_length = strlen( $Dante_speak )
+$_GET['word']
 ?>
 <h1><?php echo $Dante_speak ?></h1>
 <p>La stinga è lunga <?php echo $string_length ?></p>
